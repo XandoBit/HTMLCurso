@@ -6,36 +6,80 @@
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Curso HTML </title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-<link href="./style.css" rel="stylesheet" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js">
+ <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/vctrfrnndz/jquery-accordion/master/js/jquery.accordion.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+<link href="./style.css" rel="stylesheet" type="text/css" media="all" />
 
 
 <script type="text/javascript">
 
-$(document).ready(function(){
+		$(document).ready(function(){
 
-	$('.slider').slick({
+			$('.slider').slick({
 
-	autoplay:true,
-	autoplaySpeed: 3000,
-	});
-});
+			autoplay:true,
+			autoplaySpeed: 3000,
+			});
+		});
  </script>
+
+
+<script type="text/javascript">
+		 $('.accordion').accordion({
+		 transitionSpeed: 400, // velocidad del acordeón
+		 transitionEasing: 'ease' // ritmo del acordeón (linear, ease-in…)
+		});
+</script>
 
 </head>
 
 <body style= " background-color:grey;">
 
 
+	<div align="center">
+		<div class="slider" >
+					<div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlHQBlgdspthxDXKjCOs8nTmGE1KKz1i7K5pBpoSCFsWw6S-spTw"> </div>
+					<div><img src="images/slider/2.jpg"> </div>
+					<div><img src="images/slider/3.jpg"> </div>
+		</div>
+		</div>
 
-		<div class="slider">
-<div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlHQBlgdspthxDXKjCOs8nTmGE1KKz1i7K5pBpoSCFsWw6S-spTw"> </div>
-<div><img src="images/slider/2.jpg"> </div>
-<div><img src="images/slider/3.jpg"> </div>
-
+		<div data-accordion-group>
+			<div class="accordion" data-accordion>
+				<div data-control> Opción 1 </div>
+				<div data-content>
+					<div> contenido </div>
+						<div> contenido </div>
+							<div> contenido </div>
+				</div>
+				<div data-content>
+					<div> contenido </div>
+						<div> contenido </div>
+							<div> contenido </div>
+				</div>
+				<div data-control> Opción 2 </div>
+				<div data-content>
+					<div> contenido </div>
+				</div>
+				<div data-control> Opción 3 </div>
+				<div data-content>
+					<div> contenido </div>
+						<div> contenido </div>
+							<div> contenido </div>
+				</div>
+				<div data-content>
+					<div> contenido </div>
+						<div> contenido </div>
+							<div> contenido </div>
+				</div>
+				<div data-control> Opción 4 </div>
+				<div data-content>
+					<div> contenido </div>
+				</div>
+			</div>
 		</div>
 	
 
